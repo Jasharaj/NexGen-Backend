@@ -24,7 +24,7 @@ app.use(cookieParser());
 // Configure CORS
 app.use(
     cors({
-        origin: 'https://nex-gen-frontend-personal-jasharaj.vercel.app', // Your frontend URL
+        origin: 'https://nex-gen-frontend-personal-sample-jasharaj.vercel.app', // Your frontend URL
         credentials: true, // Allow credentials (cookies)
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
         allowedHeaders: ['Content-Type', 'Authorization'],
