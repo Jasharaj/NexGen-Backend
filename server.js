@@ -24,10 +24,11 @@ app.use(cookieParser());
 // Configure CORS
 app.use(
     cors({
-        origin: 'https://nexgen-indiapost.vercel.app', // Your frontend URL
+        origin: ['https://nexgen-indiapost.vercel.app', 'http://localhost:3000'], // Include both production and development
         credentials: true, // Allow credentials (cookies)
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
         allowedHeaders: ['Content-Type', 'Authorization'],
+        exposedHeaders: ['set-cookie']
     })
 );
 
